@@ -39,6 +39,8 @@ nRoom
 ║         ║
 ╚═════════╝
 
+("╔═══╝ ╚═══╗","║\t  ║","║\t  ║","║\t  ║","║\t  ║","╚═════════╝")
+
 sRoom
 ╔═════════╗
 ║         ║
@@ -46,6 +48,8 @@ sRoom
 ║         ║
 ║         ║
 ╚═══╗ ╔═══╝
+
+("╔═════════╗","║\t  ║","║\t  ║","║\t  ║","║\t  ║","╚═══╗ ╔═══╝")
 
 eRoom
 ╔═════════╗
@@ -55,6 +59,8 @@ eRoom
 ║         ║
 ╚═════════╝
 
+("╔═════════╗","║\t  ║","║\t  ╚","║\t  ╔","║\t  ║","╚═════════╝")
+
 wRoom
 ╔═════════╗
 ║         ║
@@ -62,6 +68,8 @@ wRoom
 ╗         ║
 ║         ║
 ╚═════════╝
+
+("╔═════════╗","║\t  ║","║\t  ║","╗\t  ╔","║\t  ║","╚═════════╝")
 
 neRoom
 ╔═══╝ ╚═══╗
@@ -71,6 +79,8 @@ neRoom
 ║         ║
 ╚═════════╝
 
+("╔═══╝ ╚═══╗","║\t  ║","║\t  ╚","║\t  ╔","║\t  ║","╚═════════╝")
+
 nwRoom
 ╔═══╝ ╚═══╗
 ║         ║
@@ -78,6 +88,8 @@ nwRoom
 ╗         ║
 ║         ║
 ╚═════════╝
+
+("╔═══╝ ╚═══╗","║\t  ║","╝\t  ║","╗\t  ║","║\t  ║","╚═════════╝")
 
 seRoom
 ╔═════════╗
@@ -87,6 +99,8 @@ seRoom
 ║         ║
 ╚═══╗ ╔═══╝
 
+("╔═════════╗","║\t  ║","║\t  ╚","║\t  ╔","║\t  ║","╚═══╗ ╔═══╝")
+
 swRoom
 ╔═════════╗
 ║         ║
@@ -94,6 +108,8 @@ swRoom
 ╗         ║
 ║         ║
 ╚═══╗ ╔═══╝
+
+("╔═════════╗","║\t  ║","╝\t  ║","╗\t  ║","║\t  ║","╚═══╗ ╔═══╝")
 
 nseRoom
 ╔═══╝ ╚═══╗
@@ -103,6 +119,8 @@ nseRoom
 ║         ║
 ╚═══╗ ╔═══╝
 
+("╔═══╝ ╚═══╗","║\t  ║","║\t  ╚","║\t  ╔","║\t  ║","╚═══╗ ╔═══╝")
+
 nswRoom
 ╔═══╝ ╚═══╗
 ║         ║
@@ -110,6 +128,8 @@ nswRoom
 ╗         ║
 ║         ║
 ╚═══╗ ╔═══╝
+
+("╔═══╝ ╚═══╗","║\t  ║","╝\t  ║","╗\t  ║","║\t  ║","╚═══╗ ╔═══╝")
 
 newRoom
 ╔═══╝ ╚═══╗
@@ -119,6 +139,8 @@ newRoom
 ║         ║
 ╚═════════╝
 
+("╔═══╝ ╚═══╗","║\t  ║","╝\t  ╚","╗\t  ╔","║\t  ║","╚═════════╝")
+
 sewRoom
 ╔═════════╗
 ║         ║
@@ -127,6 +149,8 @@ sewRoom
 ║         ║
 ╚═══╗ ╔═══╝
 
+("╔═════════╗","║\t  ║","╝\t  ╚","╗\t  ╔","║\t  ║","╚═══╗ ╔═══╝")
+
 nsweRoom
 ╔═══╝ ╚═══╗
 ║         ║
@@ -134,6 +158,8 @@ nsweRoom
 ╗         ╔
 ║         ║
 ╚═══╗ ╔═══╝
+
+("╔═══╝ ╚═══╗","║\t  ║","╝\t  ╚","╗\t  ╔","║\t  ║","╚═══╗ ╔═══╝")
 '''
 
 nsHall = ("nsHall", (0,-1,'n'),(0,1,'s'))
@@ -141,48 +167,52 @@ nsHall = ("nsHall", (0,-1,'n'),(0,1,'s'))
 ewHall = ("ewHall", (-1,0,'e'),(1,0,'w'))
 
 
-nRoom = ("nRoom",(0,1,'s'))
+nRoom = (("╔═══╝ ╚═══╗","║\t  ║","║\t  ║","║\t  ║","║\t  ║","╚═════════╝"),(0,1,'s'))
 
-sRoom = ("sRoom",(0,-1,'n'))
+sRoom = (("╔═════════╗","║\t  ║","║\t  ║","║\t  ║","║\t  ║","╚═══╗ ╔═══╝"),(0,-1,'n'))
 
-eRoom = ("eRoom",(1,0,'w'))
+eRoom = (("╔═════════╗","║\t  ║","║\t  ╚","║\t  ╔","║\t  ║","╚═════════╝"),(1,0,'w'))
 
-wRoom = ("wRoom",(-1,0,'e'))
-
-
-neRoom = ("neRoom", (1,0,'w'),(0,1,'s'))
-
-nwRoom = ("nwRoom", (-1,0,'e'),(0,1,'s'))
-
-seRoom = ("seRoom", (1,0,'w'),(0,-1,'n'))
-
-swRoom = ("swRoom", (-1,0,'e'), (0,-1,'n'))
+wRoom = (("╔═════════╗","║\t  ║","║\t  ║","╗\t  ╔","║\t  ║","╚═════════╝"),(-1,0,'e'))
 
 
-nseRoom = ("nseRoom", (1,0,'w'),(0,1,'s'),(0,-1,'n'))
+neRoom = (("╔═══╝ ╚═══╗","║\t  ║","║\t  ╚","║\t  ╔","║\t  ║","╚═════════╝"), (1,0,'w'),(0,1,'s'))
 
-nswRoom = ("nswRoom", (-1,0,'e'),(0,1,'s'),(0,-1,'n'))
+nwRoom = (("╔═══╝ ╚═══╗","║\t  ║","╝\t  ║","╗\t  ║","║\t  ║","╚═════════╝"), (-1,0,'e'),(0,1,'s'))
 
-newRoom = ("newRoom", (1,0,'w'),(0,1,'s'),(-1,0,'e'))
+seRoom = (("╔═════════╗","║\t  ║","║\t  ╚","║\t  ╔","║\t  ║","╚═══╗ ╔═══╝"), (1,0,'w'),(0,-1,'n'))
 
-sweRoom = ("sweRoom", (-1,0,'e'), (1,0,'w'), (0,-1,'n'))
+swRoom = (("╔═════════╗","║\t  ║","╝\t  ║","╗\t  ║","║\t  ║","╚═══╗ ╔═══╝"), (-1,0,'e'), (0,-1,'n'))
 
-nsweRoom = ("nsweRoom", (-1,0,'e'), (1,0,'w'), (0,1,'s'), (0,-1,'n'))
+
+nseRoom = (("╔═══╝ ╚═══╗","║\t  ║","║\t  ╚","║\t  ╔","║\t  ║","╚═══╗ ╔═══╝"), (1,0,'w'),(0,1,'s'),(0,-1,'n'))
+
+nswRoom = (("╔═══╝ ╚═══╗","║\t  ║","╝\t  ║","╗\t  ║","║\t  ║","╚═══╗ ╔═══╝"), (-1,0,'e'),(0,1,'s'),(0,-1,'n'))
+
+newRoom = (("╔═══╝ ╚═══╗","║\t  ║","╝\t  ╚","╗\t  ╔","║\t  ║","╚═════════╝"), (1,0,'w'),(0,1,'s'),(-1,0,'e'))
+
+sweRoom = (("╔═════════╗","║\t  ║","╝\t  ╚","╗\t  ╔","║\t  ║","╚═══╗ ╔═══╝"), (-1,0,'e'), (1,0,'w'), (0,-1,'n'))
+
+nsweRoom = (("╔═══╝ ╚═══╗","║\t  ║","╝\t  ╚","╗\t  ╔","║\t  ║","╚═══╗ ╔═══╝"), (-1,0,'e'), (1,0,'w'), (0,1,'s'), (0,-1,'n'))
 
 
 #Arrays of rooms by where they open towards, I.E. any rooms in northOpenings can connect to a room to the north
-northOpenings = (nsHall, sRoom, seRoom, swRoom, nseRoom, nswRoom, sweRoom, nsweRoom)
+northOpenings = (sRoom, seRoom, swRoom, nseRoom, nswRoom, sweRoom, nsweRoom)		#nsHall, 
 
-southOpenings = (nsHall, nRoom, neRoom, nwRoom, nseRoom, nswRoom, newRoom, nsweRoom)
+southOpenings = (nRoom, neRoom, nwRoom, nseRoom, nswRoom, newRoom, nsweRoom)		#nsHall, 
 
-eastOpenings = (ewHall, wRoom, nwRoom, swRoom, nswRoom, newRoom, sweRoom, nsweRoom)
+eastOpenings = (wRoom, nwRoom, swRoom, nswRoom, newRoom, sweRoom, nsweRoom)			#ewHall,  
 
-westOpenings = (ewHall, eRoom, neRoom, seRoom, nseRoom, newRoom, sweRoom, nsweRoom)
+westOpenings = (eRoom, neRoom, seRoom, nseRoom, newRoom, sweRoom, nsweRoom)			#ewHall, 
 
 
 
-def renderMap(tileset):
-	pass
+
+
+def renderMap(tiles):
+	#Start by sorting by Y value
+	sorted(tiles, key=lambda x: x[1], reverse=True)
+	print(tiles)
 
 def printTileset(tileset):			#Debug method, not for production use
 	for tile in tileset:
@@ -247,6 +277,5 @@ while(len(nodes)!=0 and time.time()-startTime<0.000001):
 		newTile.append(wRoom)'''
 
 print(tileset)
-print("\n\n\n"+ str(nodes))
-renderTileset(tileset)
-print(populatedLocations)
+print("\n\n\n"+ str(nodes) + "\n\n\n")
+renderMap(tileset)
